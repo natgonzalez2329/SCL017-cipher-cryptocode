@@ -2,15 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="icon" href="https://love2dev.com/img/2000px-instagram_logo_2016svg-2000x2000.png" type="image/x-icon">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMXj71UoDLGdOZETUBY9ipdY0Rbc_UI2IKA&usqp=CAU" type="image/x-icon">
     <title>Cryptocode</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div>
-      <button onclick="home"><a href="#home-tab">Home</a></button>
-      <button onclick="about"><a href="#about-tab">About</a></button>
-      <button onclick="contact"><a href="#contact-tab">Contact</a></button>
+      <button id="home">Home</button>
+      <button id="about">About</button>
+      <button id="contact">Contact</button>
       <hr>
   </div>
 
@@ -29,9 +30,26 @@
       <p>Contact</p>
     </div>
 
-    <div id="cipher">
+    <div id="cipher-encrypt">
+      <h1>Cryptocode</h1>
+  <form id="encrypt-input" autocomplete="off">
+  <input type="text" id="encrypt-input_message" name="message" spellcheck="false" placeholder="Secret Information" size=50>
+  </form>
 
+  <div id="cryptogram">
+    <!--check if the readonly works-->
+    <form id="cryptogram-input">
+    <input type="text" id="cryptogram-input_result" name="result" size=50 readonly>
+    </form>
+  </div>
 
+  <div class="change">
+  <!--put like minimous negative numbers is reverse?-->
+    <form id="change-input">
+    <input type="number" id="change-input_offset" value="10" name="change" min="1" max="33" step="1">
+    <output>10</output>
+    </form>
+  </div>
     </div>
 
 
