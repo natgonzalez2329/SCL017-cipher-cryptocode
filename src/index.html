@@ -31,13 +31,12 @@
     </div>
 
     <div id="cipher-encrypt">
-      <h1>Cryptocode</h1>
   <form id="encrypt-input" autocomplete="off">
   <input type="text" id="encrypt-input_message" name="message" spellcheck="false" placeholder="Secret Information" size=50>
   </form>
 
   <div id="cryptogram">
-    <!--check if the readonly works-->
+    <!--cambiar a div para que inner HTML FUNCIONE-->
     <form id="cryptogram-input">
     <input type="text" id="cryptogram-input_result" name="result" size=50 readonly>
     </form>
@@ -48,6 +47,12 @@
     <form id="change-input">
     <input type="number" id="change-input_offset" value="10" name="change" min="1" max="33" step="1">
     <output>10</output>
+    </form>
+  </div>
+
+  <div><!--cambiar por submit-que se ejecute con un enter-->
+    <form>
+  <input type="button" id="btnEncode" name="test1" value="Encode">
     </form>
   </div>
     </div>
