@@ -47,10 +47,8 @@ btncontact.addEventListener("click", () => {
 
 
   //CIPHER
-  const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+  //const alphabet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
       const encryptInputMessage = document.getElementById("encrypt-input_message");
-      const encryptInput = document.getElementById("encrypt-input");
-      const cryptogram = document.getElementById("cryptogram");
       const cryptogramInputResult = document.getElementById("cryptogram-input_result");
       const changeInputOffset = document.getElementById("change-input_offset");
       const btnEncode = document.getElementById("btnEncode");
@@ -75,28 +73,44 @@ btncontact.addEventListener("click", () => {
     });
 
     //function to encode the textMessage by the chengeOffset to get the textResult-this is a new var to put-
+    //(*numero de la letra ASCII* x-65 + offset) % 26 + 65-----la operacion x-65---- saber posición alfabeto o array
+    /*1.obtener el codigo ASCII de las letras que se ingresan en encrypt-input_message= textMessage
+    2.convertir a la posición del alfabeto
+    3.aplicar la formula y luego con esa nueva posicion que esta en el alfabeto, pasarla otra vez  
+    a cod ASCII para que la computadora nos muestre esa nueva letra.*/
     const encodeText = (textMessage,changeOffset) =>{
         let textResult = "";
-        const backToAlphabetM;// declarar variable afuera, si no se pone opaca.
 
         for (let i = 0; i < textMessage.length; i++) {
             const codeAscii = textMessage[i].charCodeAt();
-            if (codeAscii != alphabet[i].charCodeAt()) {
+            if (codeAscii < 65 || codeAscii > 90) {
                 textResult += String.fromCharCode(codeAscii);
             }
-
             if(codeAscii >= 65 && codeAscii <= 90) {
-                console.log(codeAscii);
-                backToAlphabetM = (codeAscii - 65 + changeOffset);
-                while(backToAlphabetM < 0) {
-                    backToAlphabetM = (codeAscii - 65 + changeOffset);
-                }
-                let formulaEncode = (backToAlphabetM) % 26 + 65;
-                textResult += String.fromCharCode(formulaEncode);
-                console.log(textResult);
+                changeOffset = (changeOffset % 26 +26) % 26;
+               const encodedAlphabet = (codeAscii - 65 + changeOffset);
+               const formulaEncode = encodedAlphabet % 26 + 65;
+               textResult += String.fromCharCode(formulaEncode);
             }
-        /* if(codeAscii <= 65 && codeAscii >= 90) {
-            textResult += textMessage[i];
-        } */
     }
+    return textResult;
 }
+
+    const decodeText = (textMessage,changeOffset) =>{
+        let textResult = "";
+
+         for (let i = 0; i < textMessage.length; i++) {
+        const codeAscii = textMessage[i].charCodeAt();
+        if (codeAscii < 65 || codeAscii > 90) {
+            textResult += String.fromCharCode(codeAscii);
+        }
+        if(codeAscii >= 65 && codeAscii <= 90) {
+            changeOffset = (changeOffset % 26 +26) % 26;
+           const encodedAlphabet = (codeAscii - 65 - changeOffset);
+           const formulaEncode = encodedAlphabet % 26 + 65;
+           textResult += String.fromCharCode(formulaEncode);
+        }
+}
+    return textResult;
+}
+
