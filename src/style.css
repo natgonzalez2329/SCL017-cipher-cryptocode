@@ -1,7 +1,96 @@
-body  {
-    background: rgb(95, 155, 204);
+html {
+    background-image: url("./images/prueba1.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.btn {
+    position: relative;
+    left: 78%;
+    background-color: rgb(10, 77, 116);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+    
+}
+
+.btn:hover {
+    background-color: gray;
 }
 
 hr {
-    border: 1px solid brown;
+    position: relative;
+    border: 1px solid white;
+    width: 100%;
 }
+
+#home-tab {
+    position:absolute;
+    left: 55%;
+    justify-content: center;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#encrypt-input_message {
+    background-color: black;
+    border-radius: 5%;
+    height: 30%;
+    /*definir padding y margin*/
+    border: none;
+    box-shadow: 8px 8px 35px 0px rgb(42, 40, 40);
+    position: absolute;
+    top: 32%; 
+    left: 40%;
+    font-family: 'Courier New', Courier, monospace;
+    color: white; 
+    text-align:justify;
+    
+}
+
+#cryptogram-input_result {
+    background-color: black;
+    border-radius: 5%;
+    height: 30%;
+    /*definir padding y margin*/
+    border: none;
+    box-shadow: 8px 8px 35px 0px rgb(42, 40, 40);
+    position: absolute;
+    top: 32%;
+    left: 75%;
+    color: #20c20e;
+}
+
+#change-input_offset{
+    position: absolute;
+    top: 45%;
+    left: 68%;
+    width: 32px;
+}
+
+#btnEncode {
+    position: absolute;
+    top: 49%;
+    left: 69%;
+}
+
+#btnDecode {
+    position: absolute;
+    top: 49%;
+    left: 65%;
+}
+

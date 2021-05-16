@@ -56,9 +56,9 @@ btncontact.addEventListener("click", () => {
       
 
 
-    encryptInputMessage.addEventListener("keyup", () =>{
+    /*encryptInputMessage.addEventListener("keyup", () =>{
         encryptInputMessage.value = encryptInputMessage.value.toUpperCase();
-    });
+    });*/
 
     btnEncode.addEventListener("click", () =>{
         const textMessage = encryptInputMessage.value;
@@ -83,13 +83,19 @@ btncontact.addEventListener("click", () => {
 
         for (let i = 0; i < textMessage.length; i++) {
             const codeAscii = textMessage[i].charCodeAt();
-            if (codeAscii < 65 || codeAscii > 90) {
+            if (codeAscii < 65 || (codeAscii > 90 && codeAscii < 97) || codeAscii > 122) {
                 textResult += String.fromCharCode(codeAscii);
             }
+
             if(codeAscii >= 65 && codeAscii <= 90) {
                 changeOffset = (changeOffset % 26 +26) % 26;
                const encodedAlphabet = (codeAscii - 65 + changeOffset);
                const formulaEncode = encodedAlphabet % 26 + 65;
+               textResult += String.fromCharCode(formulaEncode);
+            } else if(codeAscii >= 97 && codeAscii <= 122) {
+                changeOffset = (changeOffset % 26 +26) % 26;
+               const encodedAlphabet = (codeAscii - 97 + changeOffset);
+               const formulaEncode = encodedAlphabet % 26 + 97;
                textResult += String.fromCharCode(formulaEncode);
             }
     }
@@ -99,17 +105,23 @@ btncontact.addEventListener("click", () => {
     const decodeText = (textMessage,changeOffset) =>{
         let textResult = "";
 
-         for (let i = 0; i < textMessage.length; i++) {
-        const codeAscii = textMessage[i].charCodeAt();
-        if (codeAscii < 65 || codeAscii > 90) {
-            textResult += String.fromCharCode(codeAscii);
-        }
+        for (let i = 0; i < textMessage.length; i++) {
+            const codeAscii = textMessage[i].charCodeAt();
+            if (codeAscii < 65 || (codeAscii > 90 && codeAscii < 97) || codeAscii > 122) {
+                textResult += String.fromCharCode(codeAscii);
+            }
+
         if(codeAscii >= 65 && codeAscii <= 90) {
             changeOffset = (changeOffset % 26 +26) % 26;
            const encodedAlphabet = (codeAscii - 65 - changeOffset);
            const formulaEncode = encodedAlphabet % 26 + 65;
            textResult += String.fromCharCode(formulaEncode);
-        }
+        } else if(codeAscii >= 97 && codeAscii <= 122) {
+            changeOffset = (changeOffset % 26 +26) % 26;
+           const encodedAlphabet = (codeAscii - 97 - changeOffset);
+           const formulaEncode = encodedAlphabet % 26 + 97;
+           textResult += String.fromCharCode(formulaEncode);
+        } 
 }
     return textResult;
 }

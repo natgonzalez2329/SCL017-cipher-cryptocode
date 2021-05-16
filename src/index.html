@@ -8,17 +8,51 @@
   </head>
 
   <body>
-    <div>
-      <button id="home">Home</button>
-      <button id="about">About</button>
-      <button id="contact">Contact</button>
-      <hr>
+    
+  <div class="btn-group">
+      <button class="btn" id="home">Home</button>
+      <button class="btn" id="about">About</button>
+      <button class="btn" id="contact">Contact</button>
   </div>
+  <hr>
+
 
     <div id="home-tab">
       <h2>Shield your information!</h2>
       <h1>Cryptocode</h1>
       <h3>We provide you with security, confidenciality and privacy</h3> 
+    </div>
+
+    <div id="cipher-encrypt">
+      <form id="encrypt-input" autocomplete="off">
+      <input type="text" id="encrypt-input_message" name="message" spellcheck="false" placeholder="Secret Information" size=50>
+      </form>
+    
+      <div id="cryptogram">
+        <form id="cryptogram-input">
+        <input type="text" id="cryptogram-input_result" name="result" size=50 readonly>
+        </form>
+      </div>
+    
+      <div class="change">
+      <!--put like minimous negative numbers is reverse?-->
+        <form id="change-input">
+        <input type="number" id="change-input_offset" value="1" name="change" min="-30" max="30" step="1">
+        </form>
+      </div>
+    
+      <div>
+        <form>
+      <input type="button" id="btnEncode" name="test1" value="Encode">
+        </form>
+      </div>
+    
+      <div>
+        <form>
+      <input type="button" id="btnDecode" name="test2" value="Decode">
+        </form>
+      </div>
+
     </div>
 
     <div id="about-tab">
@@ -29,39 +63,6 @@
     <div id="contact-tab">
       <p>Contact</p>
     </div>
-
-    <div id="cipher-encrypt">
-  <form id="encrypt-input" autocomplete="off">
-  <input type="text" id="encrypt-input_message" name="message" spellcheck="false" placeholder="Secret Information" size=50>
-  </form>
-
-  <div id="cryptogram">
-    <form id="cryptogram-input">
-    <input type="text" id="cryptogram-input_result" name="result" size=50 readonly>
-    </form>
-  </div>
-
-  <div class="change">
-  <!--put like minimous negative numbers is reverse?-->
-    <form id="change-input">
-    <input type="number" id="change-input_offset" value="10" name="change" min="-30" max="30" step="1">
-    </form>
-  </div>
-
-  <div>
-    <form>
-  <input type="button" id="btnEncode" name="test1" value="Encode">
-    </form>
-  </div>
-
-  <div>
-    <form>
-  <input type="button" id="btnDecode" name="test2" value="Decode">
-    </form>
-  </div>
-  
-    </div>
-
 
     <script src="index.js" type="module"></script>
   </body>
