@@ -436,3 +436,19 @@ de las usuarias.
 * [ ] Permite usar un `offset` negativo.
 
 </details>
+
+## README 
+
+# CIPHER - CRYPTOCODE
+
+
+Cryptocode es una pagina web que ofrece el servicio de encriptar cualquier información de índole confidencial, con el fin de protegerla. Nos encontramos con una problemática actual, donde todo servicio es online, en el cual cada persona tiene diferentes cuentas y por consiguiente claves que anotar o guardar en dispositivos o materiales, quedando esta información confidencial y privada vulnerada. Por lo que creemos que al crear un sitio web donde podrás transformar dicha información (datos personales, bancarios, contraseñas, cuentas de servicios y suscripciones) en información codificada que tengas a la mano cuando la necesites, es una necesidad.
+
+Por lo que se ofrece el servicio de encriptar o codificar toda la información personal confidencial para aumentar la seguridad, de manera que sólo pueda leerlo, manejarlo y dar uso de la misma aquel que cuente con la clave de cifrado adecuada para descodificarlo.
+
+Los datos personales deben estar cifrados, de modo que sólo el propietario autorizado tenga acceso a su propia información confidencial. Es una gran medida de seguridad y privacidad si tiene sus datos codificados de manera tal, que aunque se produzca un acceso no autorizado o sea vulnerado la ubicación y privacidad de estos datos, no estarán legibles puesto que sólo se tendrá acceso a información codificada.
+
+Toda esta información solicitada por parte del usuario y almacenada, solo será descifrada por el mismo sistema operativo en segundo plano, el cual el usuario tendrá acceso comprobando automáticamente su identidad a través de un código solicitado que se le enviara a su dispositivo móvil.
+
+## Modo de usuarios
+

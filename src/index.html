@@ -1,67 +1,146 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMXj71UoDLGdOZETUBY9ipdY0Rbc_UI2IKA&usqp=CAU" type="image/x-icon">
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReMXj71UoDLGdOZETUBY9ipdY0Rbc_UI2IKA&usqp=CAU"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Code+Pro:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Cryptocode</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    
-  <div class="btn-group">
+    <div class="btn-group">
       <button class="btn" id="home">Home</button>
       <button class="btn" id="about">About</button>
       <button class="btn" id="contact">Contact</button>
-  </div>
-  <hr>
-
+    </div>
+    <hr />
 
     <div id="home-tab">
       <h2>Shield your information!</h2>
       <h1>CRYPTOCODE</h1>
-      <h3>We provide you with security, confidenciality and privacy.</h3> 
+      <h3>We provide you with security, confidenciality and privacy.</h3>
     </div>
 
     <div id="cipher-encrypt">
       <form id="encrypt-input" autocomplete="off">
-      <textarea type="text" id="encrypt-input_message" name="message" spellcheck="false" placeholder="Secret Information" rows="4" cols="50"></textarea>
+        <textarea
+          type="text"
+          id="encrypt-input_message"
+          name="message"
+          spellcheck="false"
+          placeholder="Secret Information"
+          rows="4"
+          cols="50"
+        ></textarea>
       </form>
-    
+
       <div id="cryptogram">
         <form id="cryptogram-input">
-        <textarea type="text" id="cryptogram-input_result" name="result" rows="4" cols="50" readonly></textarea>
-        </form>
-      </div>
-    
-      <div class="change">
-      <!--put like minimous negative numbers is reverse?-->
-        <form id="change-input">
-        <input type="number" id="change-input_offset" value="1" name="change" min="-30" max="30" step="1">
-        </form>
-      </div>
-    
-      <div>
-        <form>
-      <input type="button" id="btnEncode" name="test1" value="Encode">
-        </form>
-      </div>
-    
-      <div>
-        <form>
-      <input type="button" id="btnDecode" name="test2" value="Decode">
+          <textarea
+            type="text"
+            id="cryptogram-input_result"
+            name="result"
+            rows="4"
+            cols="50"
+            readonly
+          ></textarea>
         </form>
       </div>
 
+      <div class="change">
+        <!--put like minimous negative numbers is reverse?-->
+        <form id="change-input">
+          <input
+            type="number"
+            id="change-input_offset"
+            value="1"
+            name="change"
+            min="-30"
+            max="30"
+            step="1"
+          />
+        </form>
+      </div>
+
+      <div>
+        <form>
+          <button
+            type="button"
+            class="btnCipher"
+            id="btnEncode"
+            name="test1"
+            value="Encode"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              viewbox="0 0 16 16"
+            >
+              <path
+                d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div>
+        <form>
+          <button
+            type="button"
+            class="btnCipher"
+            id="btnDecode"
+            name="test2"
+            value="Decode"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              viewbox="0 0 16 16"
+            >
+              <path
+                d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2z"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
 
     <div id="about-tab">
-      <p>ABOUT
-        We are a segurity platform, which we offer a personalized service according to the interests of users. </p>
+      <h2 id="h2-about">about</h2>
+      <h1 id="h1-about">CRYPTOCODE</h1>
+      <p id="about-tab_p1">
+        We are a security platform, where we offer a personalized encryption
+        according to user interests. <br> Through encryption, you will have that valuable information
+        you want at your fingertips easily, quickly and safely.
+      </p>
+      <p id="about-tab_p2">
+        We believe that our service helps all those whose interest is to protect
+        important information, encrypting it so that it is not violated, where
+        only the owner will have absolute power, thus taking care of their
+        interests.Thus providing security and confidentiality on sensitive
+        information.
+      </p>
     </div>
 
     <div id="contact-tab">
-      <p>Contact</p>
+      <p>@cryptocode_cipher</p>
+      <p>cryptocode_cipher</p>
+      <p>contacto@cryptocodecipher.cl</p>
     </div>
 
     <script src="index.js" type="module"></script>
