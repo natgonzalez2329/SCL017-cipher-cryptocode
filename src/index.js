@@ -1,7 +1,5 @@
 import cipher from "./cipher.js";
 
-console.log(cipher);
-
 const homeTab = document.getElementById("home-tab");
 const aboutTab = document.getElementById("about-tab");
 const contactTab = document.getElementById("contact-tab");
@@ -77,50 +75,3 @@ btnDecode.addEventListener("click", () => {
     3.aplicar la formula y luego con esa nueva posicion que esta en el alfabeto, pasarla otra vez  
     a cod ASCII para que la computadora nos muestre esa nueva letra.*/
 
-/*const encode = (textMessage,changeOffset) =>{
-        let textResult = "";
-
-        for (let i = 0; i < textMessage.length; i++) {
-            const codeAscii = textMessage[i].charCodeAt();
-            if (codeAscii < 65 || (codeAscii > 90 && codeAscii < 97) || codeAscii > 122) {
-                textResult += String.fromCharCode(codeAscii);
-            }
-
-            if(codeAscii >= 65 && codeAscii <= 90) {
-                changeOffset = (changeOffset % 26 +26) % 26;
-               const encodedAlphabet = (codeAscii - 65 + changeOffset);
-               const formulaEncode = encodedAlphabet % 26 + 65;
-               textResult += String.fromCharCode(formulaEncode);
-            } else if(codeAscii >= 97 && codeAscii <= 122) {
-                changeOffset = (changeOffset % 26 +26) % 26;
-               const encodedAlphabet = (codeAscii - 97 + changeOffset);
-               const formulaEncode = encodedAlphabet % 26 + 97;
-               textResult += String.fromCharCode(formulaEncode);
-            }
-    }
-    return textResult;
-}
-
-    const decode = (textMessage,changeOffset) =>{
-        let textResult = "";
-
-        for (let i = 0; i < textMessage.length; i++) {
-            const codeAscii = textMessage[i].charCodeAt();
-            if (codeAscii < 65 || (codeAscii > 90 && codeAscii < 97) || codeAscii > 122) {
-                textResult += String.fromCharCode(codeAscii);
-            }
-
-        if(codeAscii >= 65 && codeAscii <= 90) {
-            changeOffset = (changeOffset % 26 +26) % 26;
-           const encodedAlphabet = (codeAscii - 65 - changeOffset);
-           const formulaEncode = encodedAlphabet % 26 + 65;
-           textResult += String.fromCharCode(formulaEncode);
-        } else if(codeAscii >= 97 && codeAscii <= 122) {
-            changeOffset = (changeOffset % 26 +26) % 26;
-           const encodedAlphabet = (codeAscii - 97 - changeOffset);
-           const formulaEncode = encodedAlphabet % 26 + 97;
-           textResult += String.fromCharCode(formulaEncode);
-        } 
-}
-    return textResult;
-}*/
