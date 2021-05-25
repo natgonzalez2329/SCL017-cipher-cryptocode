@@ -1,3 +1,146 @@
+## README 
+
+# CIPHER - CRYPTOCODE/Repository Name
+
+## Índice
+
+* [1. Descripción general](#1-descripción-general)
+* [2. Prototipo y diseño](#2-prototipo-y-diseño)
+* [3. Perfil de usuarios](#3-perfil-de-usuarios)
+* [4. Modo de usuarios](#4-modo-usuarios)
+* [5. Tecnología](#5-tecnología)
+* [6. Instalación](#6-instalación)
+* [7. Recursos y temas relacionados](#7-recursos-y-temas-relacionados)
+* [8. Objetivos planteados](#8-objetivos-planteados)
+
+***
+
+## 1. Descripción general
+Cryptocode es una pagina web que ofrece el servicio de encriptar cualquier información de índole personal y confidencial (datos personales, bancarios, contraseñas, cuentas de servicios y suscripciones, etc.), con el fin de protegerla. Sabemos que la mayoría de las personas tiene diferentes cuentas y por consiguiente claves, también información sensible que anotar o guardar en dispositivos o materiales, quedando esta información confidencial y privada vulnerada. Por lo que creemos que al crear un sitio web donde podrás transformar dicha información  en criptograma que tengas a la mano cuando la necesites, es una necesidad. Es una gran medida de seguridad y privacidad, de manera que sólo pueda leerlo, manejarlo y dar uso de la misma aquel que cuente con la clave de cifrado(offset) adecuada para descodificarlo, estos datos al estar cifrados aunque se produzca un acceso no autorizado o sea vulnerado la ubicación y privacidad de estos datos, no estarán legibles puesto que sólo se tendrá acceso a información codificada.
+
+## 2. Prototipo y diseño
+ 
+Prototipo inicial
+![prototipo-inicial](./prototipo-inicial.jpeg)
+
+El diseño del prototipo se baso en el objetivo del proyecto, que es cifrar  y descifrar cualquier información. De esta manera me inspire en el diseño tipo traductor.
+
+Luego esta idea principal la plasme, en la plataforma Figma, haciendo un prototipo digital de baja fidelidad para tener mas claro la distribución de los elementos y que colores implementar en el proyecto. La paleta de colores predominante que escogí fue azul en diferentes tonalidades, gris, para el aspecto de la página en general.
+
+ Por lo tanto el layout o esquema de distribución de los elementos dentro de la página se desarrollo de la siguiente forma; se creo un Home como página principal el cual contiene el nombre de la página, eslogan y el cifrador. 
+
+ ![prototipo-final-cipher](./pt1-home-figma.png)
+
+En el cifrador se implementa dos cuadros de texto, para que el usuario pueda escribir el texto original que quiere encriptar y el otro para que se muestre el criptograma, dichos cuadros de textos simulan el estilo de una terminal con fondo negro, para darle un estilo de mensaje secreto o mensaje encryptado en códigos de computador. 
+
+Entre ambos cuadros de texto se situo los elementos para cifrar/descifrar, ubicandolos en esta parte para que el usuario lo tenga a la vista con alcance más rápido. Consta de un numerador para determinar la clave de cifrado(offset), y de dos botones para cifrar y descifrar.
+
+En la parte superior de la página se ubico tres botones, los cuales tienen acceso a Home como página principal, y sub-páginas como About(breve descripción) y Contact (redes de la página).
+
+![prototipo-final-about](./pt2-about-figma.png)
+![prototipo-final-contact](./pt3-contact-figma.png)
+
+Posterior al diseño del prototipo de baja fidelidad, solicite feedback a mis compañeras, con respecto al diseño e interacción, obtuve como resultado:
+- Mejorar el diseño a que sea mas llamativo, que no fuera tan plano.
+- Agregar colores mas vivos.
+- Estilizar diseño de botones y cuadros de texto.
+- Cambiar tipo de letra de los cuadros de texto a tipo terminal.
+- Agregar favicon.
+- Agregar imagen referente al tema del proyecto.
+
+Todas estas sugerencias las lleve a cabo, en el proyecto final, implemente como objetivo principal mejorar el estilo y diseño de la página a mas minimalista y en ese sentido:
+
+* Elegí una imagen de un candado que me represento cifrar, encriptado, tecnologia, actual. Manteniendo el color azul como referente pero esta vez de una forma más llamativa. Esta imagen decidí ponerla de fondo en cada sección, la cual estiliza y genera una sensación de profesionalismo, seguridad y actualidad, resaltando los elementos de interés y agradable a la vista.
+* Estilice los cuadros de texto redondeando los bordes, cambie el tipo de letra de aspecto fuente de Terminal, para darle más sentido y tenga concordancia a mi idea inicial. También el color y tipo de letra del cuadro de texto original es diferente al cuadro de texto del criptograma.
+* Estilice también los botones redondeando los botones, y puse iconos simbólicos de cifrar/descifrar a candados cerrado/abierto, respectivamente. Dichos iconos guardan concordancia con la imagen de fondo de la página, siguiendo la tematica principal de cifrado. 
+
+![proyecto-final1](./pcipher1.png)
+![proyecto-final2](./pcipher2.png)
+![proyecto-final3](./pcipher3.png)
+
+
+## 3. Perfil de usuarios
+El servicio de cifrado/descifrado de cualquier tipo de información de obtención gratuita y rápida, va dirigido a todas aquellas personas, principalmente adultos de edad joven, media o avanzada edad,  que tienen la necesidad de salvaguardar sus datos o información de carácter privada y/o confidencial, aquellas personas que se sientan identificadas con las circunstancias de vulnerabilidad que actualmente tenemos en la web o directamente desde el ordenador.
+
+## 4. Modo de usuarios
+Una vez que se accede a la página Cryptocode, se tiene acceso a traves de tres botones a la página principal y las subpáginas.
+1. Al acceder a página principal (_Home_), tendra acceso al cifrador.
+Para cifrar se le permite al usuario:
+* Escribir el mensaje (texto original) que quiere cifrar en el primer cuadro de texto.
+* En el numerador indicar clave de cifrado ((_offset_)) determinando cuántas posiciones quiere que
+  el cifrado desplace **cada letra** del mensaje.
+* Al hacer click en el boton de cifrar(_candado cerrado_), se verá el resultado del mensaje cifrado, en el segundo cuadro de texto, el cual tien la propiedad de readonly, que no permite modificar el criptograma, solo copiarlo.
+
+Para descifrar se le permite al usuario:
+* Escribir o copiar el mensaje (texto cifrado) que quiere descifrar en el primer cuadro de texto.
+* En el numerador indicar clave de cifrado ((_offset_)) que se utilizó para cifrar el mensaje.
+* Al hacer click en el boton de descifrar (_candado abierto_), puede ver y obtener el resultado del mensaje descifrado en el segundo cuadro de texto.
+
+2. A través del botón (_About_), se accede a una sub-página que tendrá una breve descripción general del servicio que ofrece Cryptocode a sus usuarios.
+3. a través del botón (_Contact_), se accede a una sub-página que tendra toda la información a disposición de las redes sociales de Cryptocode, para un acceso más fácil y rápido.
+
+
+
+## 5. Tecnología
+El proyecto es creado con:
+ * HTML5
+ * CSS
+ * Javascript
+ * NodeJS
+
+
+## 6. Instalación
+
+Si es requerido, agrega una lista con los pasos mínimos que se necesitan para clonar exitosamente el proyecto y echarlo a andar en local.
+Explica qué debe ejecutarse para que sea posible instalarlo o instalar dependencias necesarias.
+Se amable y agrega una imagen que indique cómo debe verse el proyecto luego de instalarse o un una vista previa de lo que estás presentando en código. Esta imagen puede estar dentro del mismo proyecto y de preferencia debería estar allí
+
+
+## 7. Recursos y temas relacionados
+
+Cita las fuentes de donde te basaste, en caso de no aplicar, cita aquellos sitios que pueden complementar tu contenido.
+
+
+
+Sources
+Should we add information when our project was based on a tutorial or we got inspired with a given task? Yes, sure. 
+
+## Sources
+
+This app is inspired by Rando Kim book „Time of Your Life”
+and Android app tutorial by [@eericon](https://www.eericon.github.io/post/timer-android)
+
+I don't get the doubts in that matter. There's nothing embarassing in the fact that we learn from various sources and we document our progress. We complete many tutorials, choose learning material. A thoughless copying without providing changes in it - and without learning at all - mostly doesn't happen. 
+
+If our code was based on somebody else's code, we should add such information. 
+
+Maybe we use an old tutorial - for example, we write an application with Rails 3 tutorial. From scratch, in accordance with Rails 5 version, using new framework mechanisms. Certainly, it's worth mentioning here. 
+
+
+
+
+When our code was only inspired by another solution/an application, you can mention it and write the way you got inspired, what changes you made, what functionalities were developed.  
+
+When we solve the sets of exercises, it's worth adding where others can find their description. If we will want to come back to these sources, the link will come up easily. This way, the author who shared his/her knowledge is, spent his/her time to prepare and share this material is also respected.
+
+
+Other information
+Information on the author, contact, www and social media links, a type of license under which the code is made available or the information on how to contribute to a project - these are only the examples of what can be added to your project.
+
+## 8. Objetivos planteados
+
+- CSS:
+   * Uso de selectores de CSS.
+   * Posiciones.
+- Profundizar sobre el DOM.
+- Javascript:
+  * Crear y llamar funciones correctamente.
+  * Uso del bucle for
+  * Diferenciar correctamente cuando es const & let
+
+
+***
+
 # Cifrado César
 
 ## Índice
@@ -436,133 +579,3 @@ de las usuarias.
 * [ ] Permite usar un `offset` negativo.
 
 </details>
-
-## README 
-
-# CIPHER - CRYPTOCODE/Repository Name
-
-## Índice
-
-* [1. Descripción general](#1-descripción-general)
-* [2. Prototipo y diseño](#2-prototipo-y-diseño)
-* [3. Perfil de usuarios](#3-perfil-de-usuarios)
-* [4. Criterios de aceptación adicionales](#4-criterios-de-aceptación-adicionales)
-* [5. Objetivos de aprendizaje](#5-objetivos-de-aprendizaje)
-* [6. Recomendaciones generales](#6-recomendaciones-generales)
-* [7. Recursos y temas relacionados](#7-recursos-y-temas-relacionados)
-* [8. Checklist](#8-checklist)
-
-***
-
-## 1. Descripción general
-Cryptocode es una pagina web que ofrece el servicio de encriptar cualquier información de índole personal y confidencial (datos personales, bancarios, contraseñas, cuentas de servicios y suscripciones, etc.), con el fin de protegerla. Sabemos que la mayoría de las personas tiene diferentes cuentas y por consiguiente claves, también información sensible que anotar o guardar en dispositivos o materiales, quedando esta información confidencial y privada vulnerada. Por lo que creemos que al crear un sitio web donde podrás transformar dicha información  en información codificada que tengas a la mano cuando la necesites, es una necesidad. Es una gran medida de seguridad y privacidad, de manera que sólo pueda leerlo, manejarlo y dar uso de la misma aquel que cuente con la clave de cifrado(offset) adecuada para descodificarlo. estos datos al estar cifrados aunque se produzca un acceso no autorizado o sea vulnerado la ubicación y privacidad de estos datos, no estarán legibles puesto que sólo se tendrá acceso a información codificada.
-
-## 2. Prototipo y diseño
-![prototipo-inicial](./prototipo-inicial.jpeg)
-
-figma
-El diseño del prototipo se baso en el objetivo del proyecto, que es cifrar  y descifrar cualquier información. Por lo tanto el layout o esquema de distribución de los elementos dentro de la pagina se desarrollo de la siguiente forma; se creo un Home como pagina principal el cual contiene el nombre de la página, eslogan y el cifrador. 
-
-En el cifrador se implementa dos cuadros de texto, para que el usuario pueda escribir el texto original que quiere encriptar y el otro para que se muestre el criptograma, dichos cuadros de textos simulan el estilo de una terminal con fondo negro, para darle un estilo de mensaje secreto o mensaje encryptado en códigos de computador. 
-
-Entre ambos cuadros de texto se situo los elementos para cifrar/descifrar, ubicandolos en esta parte para que el usuario lo tenga a la vista con alcance más rápido. Consta de un numerador para determinar el offset del cifrado, y de dos botones para cifrar y descifrar, dichos botones se le simbolizo con iconos de candados cerrado y abierto, respectivamente, para hacerlo mas interactivo.
-
-En la parte superior de la página se ubico tres botones, los cuales tienen acceso a Home como página principal, y subpaginas como About(breve descripción) y Contact (redes de la página). Cada sección tiene como fondo una imagen referente al tema del proyecto, que estiliza de una manera minimalista, que genera una sensación de profesionalismo, seguridad y actualidad, resaltando los elementos de interés y agradable a la vista.
-
-## 3. Perfil de usuarios
-El servicio de cifrado/descifrado de cualquier tipo de información de obtención gratuita y rápida, va dirigido a todas aquellas personas, principalmente adultos de edad joven, media o avanzada,  que tienen la necesidad de salvaguardar sus datos o información de carácter privada y/o confidencial, aquellas personas que se sientan identificadas con las circunstancias de vulnerabilidad que actualmente tenemos en la web o directamente desde el ordenador.
-
-## Modo de usuarios
-Una vez que se accede a la página Cryptocode, se tiene acceso a traves de tres botones a la página principal y las subpáginas.
-1. Al acceder a página principal (_Home_), tendra acceso al cifrador.
-Para cifrar se le permite al usuario:
-* Escribir el mensaje (texto original) que quiere cifrar en el primer cuadro de texto.
-* Indicar un desplazamiento (_offset_) determinando cuántas posiciones quiere que
-  el cifrado desplace **cada letra** del mensaje.
-* Al hacer click en el boton de cifrar(_candado cerrado_), se verá el resultado del mensaje cifrado, en el segundo cuadro de texto, el cual tien la propiedad de readonly, que no permite modificar el criptograma, solo copiarlo.
-
-Para descifrar se le permite al usuario:
-* Escribir o copiar el mensaje (texto cifrado) que quiere descifrar en el primer cuadro de texto.
-* Indicar el desplazamiento (_offset_) que se utilizó para cifrar el mensaje.
-* Al hacer click en el boton de descifrar (_candado abierto_), puede ver y obtener el resultado del mensaje descifrado en el segundo cuadro de texto.
-
-2. A través del botón (_About_), se accede a una sub-página que tendrá una breve descripción general del servicio que ofrece la Cryptocode a sus usuarios.
-3. a través del botón (_Contact_), se accede a una sub-página que tendra toda la información a disposición de redes sociales de Cryptocode, para un acceso más fácil y rápido.
-
-
-
-
-## Table of contents
-
-Use for instance <https://github.com/ekalinin/github-markdown-toc>:
-
-> * [Title / Repository Name](#title--repository-name)
->   * [About / Synopsis](#about--synopsis)
->   * [Table of contents](#table-of-contents)
->   * [Installation](#installation)
->   * [Usage](#usage)
->     * [Screenshots](#screenshots)
->     * [Features](#features)
->   * [Code](#code)
->     * [Content](#content)
->     * [Requirements](#requirements)
->     * [Limitations](#limitations)
->     * [Build](#build)
->     * [Deploy (how to install build product)](#deploy-how-to-install-build-product)
->   * [Resources (Documentation and other links)](#resources-documentation-and-other-links)
-
-## Tecnologia
-
-## Instalación
-
-Si es requerido, agrega una lista con los pasos mínimos que se necesitan para clonar exitosamente el proyecto y echarlo a andar en local.
-Explica qué debe ejecutarse para que sea posible instalarlo o instalar dependencias necesarias.
-Se amable y agrega una imagen que indique cómo debe verse el proyecto luego de instalarse o un una vista previa de lo que estás presentando en código. Esta imagen puede estar dentro del mismo proyecto y de preferencia debería estar allí
-
-## Usage
-
-### Screenshots
-
-### Features
-
-## Code
-
-[![Build Status](https://qa.nuxeo.org/jenkins/buildStatus/icon?job=/nuxeo/addons_nuxeo-sample-project-master)](https://qa.nuxeo.org/jenkins/job/nuxeo/job/addons_nuxeo-sample-project-master/)
-
-### Content
-
-Description, sub-modules organization...
-
-### Requirements
-
-See [CORG/Compiling Nuxeo from sources](http://doc.nuxeo.com/x/xION)
-
-Sample: <https://github.com/nuxeo/nuxeo/blob/master/nuxeo-distribution/README.md>
-
-
-
-## Recursos (Documentation and other links)
-Should we add information when our project was based on a tutorial or we got inspired with a given task? Yes, sure. 
-
-## Sources
-This app is inspired by Rando Kim book „Time of Your Life”
-and Android app tutorial by [@eericon](https://www.eericon.github.io/post/timer-android)
-
-I don't get the doubts in that matter. There's nothing embarassing in the fact that we learn from various sources and we document our progress. We complete many tutorials, choose learning material. A thoughless copying without providing changes in it - and without learning at all - mostly doesn't happen. 
-
-If our code was based on somebody else's code, we should add such information. 
-
-Maybe we use an old tutorial - for example, we write an application with Rails 3 tutorial. From scratch, in accordance with Rails 5 version, using new framework mechanisms. Certainly, it's worth mentioning here. 
-
-
-
-
-When our code was only inspired by another solution/an application, you can mention it and write the way you got inspired, what changes you made, what functionalities were developed.  
-
-When we solve the sets of exercises, it's worth adding where others can find their description. If we will want to come back to these sources, the link will come up easily. This way, the author who shared his/her knowledge is, spent his/her time to prepare and share this material is also respected.
-
-
-Other information
-Information on the author, contact, www and social media links, a type of license under which the code is made available or the information on how to contribute to a project - these are only the examples of what can be added to your project.
-
-
