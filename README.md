@@ -9,9 +9,8 @@
 * [3. Perfil de usuarios](#3-perfil-de-usuarios)
 * [4. Modo de usuarios](#4-modo-usuarios)
 * [5. Tecnología](#5-tecnología)
-* [6. Instalación](#6-instalación)
-* [7. Recursos y temas relacionados](#7-recursos-y-temas-relacionados)
-* [8. Objetivos planteados](#8-objetivos-planteados)
+* [6. Objetivos planteados](#6-objetivos-planteados)
+* [7. Enlace web](#7-enlace-web)
 
 ***
 
@@ -88,46 +87,7 @@ El proyecto es creado con:
  * Javascript
  * NodeJS
 
-
-## 6. Instalación
-
-Si es requerido, agrega una lista con los pasos mínimos que se necesitan para clonar exitosamente el proyecto y echarlo a andar en local.
-Explica qué debe ejecutarse para que sea posible instalarlo o instalar dependencias necesarias.
-Se amable y agrega una imagen que indique cómo debe verse el proyecto luego de instalarse o un una vista previa de lo que estás presentando en código. Esta imagen puede estar dentro del mismo proyecto y de preferencia debería estar allí
-
-
-## 7. Recursos y temas relacionados
-
-Cita las fuentes de donde te basaste, en caso de no aplicar, cita aquellos sitios que pueden complementar tu contenido.
-
-
-
-Sources
-Should we add information when our project was based on a tutorial or we got inspired with a given task? Yes, sure. 
-
-## Sources
-
-This app is inspired by Rando Kim book „Time of Your Life”
-and Android app tutorial by [@eericon](https://www.eericon.github.io/post/timer-android)
-
-I don't get the doubts in that matter. There's nothing embarassing in the fact that we learn from various sources and we document our progress. We complete many tutorials, choose learning material. A thoughless copying without providing changes in it - and without learning at all - mostly doesn't happen. 
-
-If our code was based on somebody else's code, we should add such information. 
-
-Maybe we use an old tutorial - for example, we write an application with Rails 3 tutorial. From scratch, in accordance with Rails 5 version, using new framework mechanisms. Certainly, it's worth mentioning here. 
-
-
-
-
-When our code was only inspired by another solution/an application, you can mention it and write the way you got inspired, what changes you made, what functionalities were developed.  
-
-When we solve the sets of exercises, it's worth adding where others can find their description. If we will want to come back to these sources, the link will come up easily. This way, the author who shared his/her knowledge is, spent his/her time to prepare and share this material is also respected.
-
-
-Other information
-Information on the author, contact, www and social media links, a type of license under which the code is made available or the information on how to contribute to a project - these are only the examples of what can be added to your project.
-
-## 8. Objetivos planteados
+## 6. Objetivos planteados
 
 - CSS:
    * Uso de selectores de CSS.
@@ -137,6 +97,10 @@ Information on the author, contact, www and social media links, a type of licens
   * Crear y llamar funciones correctamente.
   * Uso del bucle for
   * Diferenciar correctamente cuando es const & let
+
+  ## 7. Enlace web
+  //gh-pages 
+
 
 
 ***

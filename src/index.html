@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    
     <div class="btn-group">
       <button class="btn" id="home">Home</button>
       <button class="btn" id="about">About</button>
@@ -31,6 +32,7 @@
     </div>
 
     <div id="cipher-encrypt">
+      <div id="encrypt">
       <form id="encrypt-input" autocomplete="off">
         <textarea
           type="text"
@@ -42,6 +44,7 @@
           cols="50"
         ></textarea>
       </form>
+    </div>
 
       <div id="cryptogram">
         <form id="cryptogram-input">
@@ -71,7 +74,6 @@
       </div>
 
       <div>
-        <form>
           <button
             type="button"
             class="btnCipher"
@@ -91,11 +93,7 @@
               />
             </svg>
           </button>
-        </form>
-      </div>
-
-      <div>
-        <form>
+      
           <button
             type="button"
             class="btnCipher"
@@ -115,9 +113,24 @@
               />
             </svg>
           </button>
-        </form>
+          <button type="button" id="btnClear" value="Clear">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"  viewbox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
+              <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
+            </svg>
+          </button>
+
+          <div class="tooltip">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"  viewbox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+            <span class="tooltiptext">
+              We do`nt store any type of data that you enter on this website.</span>
+          </div>
+          
       </div>
     </div>
+  
 
     <div id="about-tab">
       <h2 id="h2-about">about</h2>

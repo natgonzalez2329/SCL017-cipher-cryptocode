@@ -1,4 +1,12 @@
 const cipher = {
+
+  //function to encode the textMessage by the chengeOffset to get the textResult-this is a new var to put-
+//(*numero de la letra ASCII* x-65 + offset) % 26 + 65-----la operacion x-65---- saber posición alfabeto o array
+/*1.obtener el codigo ASCII de las letras que se ingresan en encrypt-input_message= textMessage
+    2.convertir a la posición del alfabeto
+    3.aplicar la formula y luego con esa nueva posicion que esta en el alfabeto, pasarla otra vez  
+    a cod ASCII para que la computadora nos muestre esa nueva letra.*/
+    
   encode: (textMessage, changeOffset) => {
     let textResult = "";
 
