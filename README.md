@@ -102,9 +102,8 @@ El proyecto es creado con:
   //gh-pages 
 
 
-
 ***
-
+<details>
 # Cifrado César
 
 ## Índice
@@ -542,4 +541,5 @@ de las usuarias.
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
 * [ ] Permite usar un `offset` negativo.
 
+</details>
 </details>

@@ -83,6 +83,7 @@ h3 {
   text-align: center;
 }
 
+/*cipher*/
 #encrypt-input_message {
   background-color: black;
   border-radius: 5%;
@@ -100,7 +101,6 @@ h3 {
   color: white;
   text-align: justify;
 }
-
 
 #cryptogram-input_result {
   background-color: black;
@@ -155,6 +155,19 @@ h3 {
   left: 69.5%;
 }
 
+#btnCopy {
+  color: white;
+  background:none;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+  border: none;
+  border-radius: 8px;
+  position:absolute;
+  top: 44%;
+  left: 94%;
+}
+
 #btnClear {
   color: white;
   background:none;
@@ -166,7 +179,6 @@ h3 {
   position:absolute;
   top: 65%;
   left: 68%;
-
 }
 
 #btnClear:hover {
@@ -196,7 +208,7 @@ h3 {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
+/*tab*/
 #h2-about {
   position: absolute;
   top: 2%;

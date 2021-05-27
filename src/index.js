@@ -56,6 +56,16 @@ btnDecode.addEventListener("click", () => {
   cryptogramInputResult.value = cipher.decode(textMessage, changeOffset);
 });
 
+//btnCopy
+const btnCopy = document.getElementById("btnCopy");
+
+btnCopy.addEventListener("click", () => {
+  const copyText = cryptogramInputResult;
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+});
+
 //btnClear
 const btnClear = document.getElementById("btnClear");
 
