@@ -1,6 +1,6 @@
 ## README 
 
-# CIPHER - CRYPTOCODE/Repository Name
+# CIPHER - CRYPTOCODE
 
 ## Índice
 
@@ -15,12 +15,12 @@
 ***
 
 ## 1. Descripción general
-Cryptocode es una pagina web que ofrece el servicio de encriptar cualquier información de índole personal y confidencial (datos personales, bancarios, contraseñas, cuentas de servicios y suscripciones, etc.), con el fin de protegerla. Sabemos que la mayoría de las personas tiene diferentes cuentas y por consiguiente claves, también información sensible que anotar o guardar en dispositivos o materiales, quedando esta información confidencial y privada vulnerada. Por lo que creemos que al crear un sitio web donde podrás transformar dicha información  en criptograma que tengas a la mano cuando la necesites, es una necesidad. Es una gran medida de seguridad y privacidad, de manera que sólo pueda leerlo, manejarlo y dar uso de la misma aquel que cuente con la clave de cifrado(offset) adecuada para descodificarlo, estos datos al estar cifrados aunque se produzca un acceso no autorizado o sea vulnerado la ubicación y privacidad de estos datos, no estarán legibles puesto que sólo se tendrá acceso a información codificada.
+Cryptocode es una página web que ofrece el servicio de encriptar cualquier información de índole personal y confidencial (datos personales, bancarios, contraseñas, cuentas de servicios y suscripciones, etc.), con el fin de protegerla. Sabemos que la mayoría de las personas tienen diferentes cuentas y por consiguiente claves, también información sensible que anotar o guardar en dispositivos o materiales, quedando esta información confidencial y privada vulnerada. Por lo que creemos que al crear un sitio web donde podrás transformar dicha información  en criptograma que tengas a la mano cuando la necesites, es una necesidad. Es una gran medida de seguridad y privacidad, de manera que sólo pueda leerlo, manejarlo y dar uso de la misma aquel que cuente con la clave de cifrado(offset) adecuada para descodificarlo, estos datos al estar cifrados aunque se produzca un acceso no autorizado o sea vulnerado la ubicación y privacidad de estos datos, no estarán legibles puesto que sólo se tendrá acceso a información codificada.
 
 ## 2. Prototipo y diseño
  
 Prototipo inicial
-![prototipo-inicial](./prototipo-inicial.jpeg)
+![prototipo-inicial](./src/images/prototipo-inicial.jpeg)
 
 El diseño del prototipo se baso en el objetivo del proyecto, que es cifrar  y descifrar cualquier información. De esta manera me inspire en el diseño tipo traductor.
 
@@ -28,34 +28,35 @@ Luego esta idea principal la plasme, en la plataforma Figma, haciendo un prototi
 
  Por lo tanto el layout o esquema de distribución de los elementos dentro de la página se desarrollo de la siguiente forma; se creo un Home como página principal el cual contiene el nombre de la página, eslogan y el cifrador. 
 
- ![prototipo-final-cipher](./pt1-home-figma.png)
+ ![prototipo-final-cipher](./src/images/pt1-home-figma.png)
 
 En el cifrador se implementa dos cuadros de texto, para que el usuario pueda escribir el texto original que quiere encriptar y el otro para que se muestre el criptograma, dichos cuadros de textos simulan el estilo de una terminal con fondo negro, para darle un estilo de mensaje secreto o mensaje encryptado en códigos de computador. 
 
 Entre ambos cuadros de texto se situo los elementos para cifrar/descifrar, ubicandolos en esta parte para que el usuario lo tenga a la vista con alcance más rápido. Consta de un numerador para determinar la clave de cifrado(offset), y de dos botones para cifrar y descifrar.
 
-En la parte superior de la página se ubico tres botones, los cuales tienen acceso a Home como página principal, y sub-páginas como About(breve descripción) y Contact (redes de la página).
+En la parte superior de la página se ubico tres botones, los cuales tienen acceso a Home como página principal, y sub-páginas como About (breve descripción) y Contact (redes de la página).
 
-![prototipo-final-about](./pt2-about-figma.png)
-![prototipo-final-contact](./pt3-contact-figma.png)
+![prototipo-final-about](./src/images/pt2-about-figma.png)
+![prototipo-final-contact](./src/images/pt3-contact-figma.png)
 
 Posterior al diseño del prototipo de baja fidelidad, solicite feedback a mis compañeras, con respecto al diseño e interacción, obtuve como resultado:
 - Mejorar el diseño a que sea mas llamativo, que no fuera tan plano.
 - Agregar colores mas vivos.
 - Estilizar diseño de botones y cuadros de texto.
-- Cambiar tipo de letra de los cuadros de texto a tipo terminal.
+- Cambiar tipo de letra de los cuadros de texto a tipo terminal y aumentar tamaño.
 - Agregar favicon.
 - Agregar imagen referente al tema del proyecto.
 
 Todas estas sugerencias las lleve a cabo, en el proyecto final, implemente como objetivo principal mejorar el estilo y diseño de la página a mas minimalista y en ese sentido:
 
-* Elegí una imagen de un candado que me represento cifrar, encriptado, tecnologia, actual. Manteniendo el color azul como referente pero esta vez de una forma más llamativa. Esta imagen decidí ponerla de fondo en cada sección, la cual estiliza y genera una sensación de profesionalismo, seguridad y actualidad, resaltando los elementos de interés y agradable a la vista.
+* Elegí una imagen de un candado que me represento cifrar, encriptado, tecnología, actual. Manteniendo el color azul como referente pero esta vez de una forma más llamativa. Esta imagen decidí ponerla de fondo en cada sección, la cual estiliza y genera una sensación de profesionalismo, seguridad y actualidad, resaltando los elementos de interés y agradable a la vista.
 * Estilice los cuadros de texto redondeando los bordes, cambie el tipo de letra de aspecto fuente de Terminal, para darle más sentido y tenga concordancia a mi idea inicial. También el color y tipo de letra del cuadro de texto original es diferente al cuadro de texto del criptograma.
 * Estilice también los botones redondeando los botones, y puse iconos simbólicos de cifrar/descifrar a candados cerrado/abierto, respectivamente. Dichos iconos guardan concordancia con la imagen de fondo de la página, siguiendo la tematica principal de cifrado. 
+* Finalmente, para mayor interactividad, agregue botón de copiar, limpiar e informativo, con sus respectivos iconos simbólicos.
 
-![proyecto-final1](./pcipher1.png)
-![proyecto-final2](./pcipher2.png)
-![proyecto-final3](./pcipher3.png)
+![proyecto-final1](./src/images/pcipher1.png)
+![proyecto-final2](./src/images/pcipher2.png)
+![proyecto-final3](./src/images/pcipher3.png)
 
 
 ## 3. Perfil de usuarios
@@ -64,16 +65,19 @@ El servicio de cifrado/descifrado de cualquier tipo de información de obtenció
 ## 4. Modo de usuarios
 Una vez que se accede a la página Cryptocode, se tiene acceso a traves de tres botones a la página principal y las subpáginas.
 1. Al acceder a página principal (_Home_), tendra acceso al cifrador.
+
 Para cifrar se le permite al usuario:
 * Escribir el mensaje (texto original) que quiere cifrar en el primer cuadro de texto.
 * En el numerador indicar clave de cifrado ((_offset_)) determinando cuántas posiciones quiere que
   el cifrado desplace **cada letra** del mensaje.
-* Al hacer click en el boton de cifrar(_candado cerrado_), se verá el resultado del mensaje cifrado, en el segundo cuadro de texto, el cual tien la propiedad de readonly, que no permite modificar el criptograma, solo copiarlo.
+* Al hacer click en el boton de cifrar(_candado cerrado_), se verá el resultado del mensaje cifrado, en el segundo cuadro de texto, el cual tiene la propiedad de readonly, que no permite modificar el criptograma, solo copiarlo.
 
 Para descifrar se le permite al usuario:
 * Escribir o copiar el mensaje (texto cifrado) que quiere descifrar en el primer cuadro de texto.
 * En el numerador indicar clave de cifrado ((_offset_)) que se utilizó para cifrar el mensaje.
 * Al hacer click en el boton de descifrar (_candado abierto_), puede ver y obtener el resultado del mensaje descifrado en el segundo cuadro de texto.
+
+La información obtenida puede ser copiada automáticamente en su respectivo botón, ubicado en la parte superior derecha del segundo cuadro de texto. Si desea cifrar cualquier otra información, puede limpiar los cuadros de texto con el botón ubicado entre los cuadros de textos, inmediatamente en la parte inferior de los botones cifrar/descifrar, respectivamente.
 
 2. A través del botón (_About_), se accede a una sub-página que tendrá una breve descripción general del servicio que ofrece Cryptocode a sus usuarios.
 3. a través del botón (_Contact_), se accede a una sub-página que tendra toda la información a disposición de las redes sociales de Cryptocode, para un acceso más fácil y rápido.
